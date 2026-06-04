@@ -1,13 +1,26 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package bagian2.arraylist;
 
-/**
- *
- * @author User
- */
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class LatihanMandiri3 {
-    
+    public static void main(String[] args) {
+        //array kosong
+        ArrayList<String> nama = new ArrayList<>();
+        
+        String[] data = {"Reno", "reja", "Agus", "Citra", "Dono", "Andri"};
+        
+
+        
+        nama.addAll(Arrays.asList(data));
+        
+        System.out.println("list nama" + Arrays.toString(data));
+        
+        System.out.println("======== Nama Awal A ==========");
+        for (String n : nama) {
+            if (n.startsWith("A")) {
+                System.out.println("- " + n);
+            }
+        }
+    }
 }
